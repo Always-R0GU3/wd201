@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #name:invalid {
+            border: 1px solid red;
+        }
+
+        #email:invalid {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-screen bg-indigo-600" id="ff">
+        <div class="w-96 p-6 shadow-1g bg-white rounded-md">
+            <form id="user-form">
+                <label for="name" class="block text-base mb-2">Name</label>
+                <input required type="text" id="name" name="name" placeholder="Enter Full Name"
+                    class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600">
+
+                <label for="email" class="block text-base mb-2 mt-5">Email</label>
+                <input required type="email" id="email" name="email" placeholder="Enter your Email"
+                    class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600">
+
+                <label for="password" class="block text-base mb-2 mt-5">Password</label>
+                <input required type="password" id="password" name="password" placeholder="Enter your Password"
+                    class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600">
+
+                <label for="dob" class="block text-base mb-2 mt-5">Date of Birth</label>
+                <input required type="date" id="dob" name="dob"
+                    class="border w-full text-base px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600">
+
+                <div class="mt-5 mb-4">
+                    <input required type="checkbox" id="acceptTerms" name="acceptTerms">
+                    <label for="acceptTerms">Accept Terms & Conditions</label>
+                </div>
+
+                <button type="submit"
+                    class="border-2 border-indigo-700 bg-indigo-700 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-indigo-700 font-semibold">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="flex justify-center items-center flex-col space-y-4 p-6 shadow-1g bg-white rounded-md">
+        <div>
+            <h2 class="border-1 border-white text-indigo-700 px-6 font-bold text-3xl">Entries</h2>
+        </div>
+        <div class="flex justify-center items-center">
+            <button type="button" id="clear-btn">Clear All Data</button>
+        </div>
+        <div class="w-full">
+            <div id="table-userentries"></div>
+        </div>
+    </div>
+
+    <script src="./reg_script.js"></script>
+</body>
+
+</html>
