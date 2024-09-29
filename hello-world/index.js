@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const fs = require("fs")
 
 fs.writeFile("sample.txt","Hi There! This is a sample text file.",
@@ -15,3 +16,6 @@ fs.readFile("sample.txt",
 )
 
 fs.cl
+=======
+console.log("Hello GitHub!")
+>>>>>>> origin/main
