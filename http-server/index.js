@@ -59,6 +59,5 @@ Promise.all([
         });
     })
     .catch(err => {
-        console.error("Error reading files:", err);
-        process.exit(1); // Exit on error
+        throw err
     });
