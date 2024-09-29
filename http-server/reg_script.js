@@ -1,4 +1,5 @@
 //Registration
+console.log("reg_script.js is running");
 const userform = document.getElementById("user-form")
 
 const retrieveEntries = () => {
