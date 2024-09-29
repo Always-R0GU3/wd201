@@ -41,5 +41,5 @@ Promise.all([
             .listen(port);
     })
     .catch(err => {
-        console.error("Error reading files:", err);
+        throw err
     });
