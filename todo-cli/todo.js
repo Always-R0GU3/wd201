@@ -1,5 +1,6 @@
 const todoList = () => {
   all = [];
+  const today = new Date().toISOString().slice(0, 10);
   const add = (todoItem) => {
     all.push(todoItem);
   };
